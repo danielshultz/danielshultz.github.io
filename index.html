@@ -1,0 +1,429 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Daniel Shultz</title>
+
+<style>
+body {
+	font-family: verdana;
+	font-size: 8pt;
+	color: #000;
+}
+a:link, a:visited, a:hover {
+	text-decoration: none;
+	color: #000;
+}
+#wrapper {
+   height:100%;
+   width: 100%;
+   margin: 0;
+   padding: 0;
+   border: 0;
+}
+#wrapper td {
+   vertical-align: middle;
+   text-align: center;
+}
+#main {
+	width: 600px;
+	margin-left: -200px;
+	margin-top: -600px;
+	font-family: verdana;
+	font-size: 8pt;
+	text-align: center;
+}
+#main img {
+	max-width: 600px;
+	max-height: 600px;
+}
+td {
+	height: 600px;
+}
+table {
+	padding-top: 100px;
+	margin-left: -10px;
+}
+.title { 
+    opacity: 0; 
+    transition: all 1s;
+    position: fixed;
+    top: 74px;
+    width: 100%;
+	text-align: center;
+	margin-left: -9px;
+	letter-spacing: 1px;
+}
+a:hover +.title {
+    opacity: 1;
+	z-index: 99;
+}
+.photo {
+	position: fixed;
+	top: 24px;
+    left: 49%;
+	z-index: 99;
+}
+.title2 { 
+    opacity: 0; 
+    transition: all 1s;
+    position: fixed;
+    top: 46%;
+    left: 49px;
+	margin-top: 1px;
+	letter-spacing: 1px;
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+a:hover +.title2 {
+    opacity: 1;
+	z-index: 99;
+}
+.photo2 {
+	position: fixed;
+	left: 30px;
+	top: 45%;
+	z-index: 99;
+}
+.title3 { 
+    opacity: 0; 
+    transition: all 1s;
+    position: fixed;
+    top: 47%;
+    right: 35px;
+	letter-spacing: 1px;
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+a:hover +.title3 {
+    opacity: 1;
+	z-index: 99;
+}
+.photo3 {
+	position: fixed;
+	right: 30px;
+	top: 46%;
+	margin-top: -7px;
+	z-index: 99;
+}
+#about {
+	height: 100%;
+	width: 100%;
+	background: rgba(0,0,0, 0.3);
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	color: #ffffff;
+	letter-spacing: 1px;
+	font-size: 8pt;
+	line-height: 18px;
+	text-align: right;
+	z-index: 99;
+} 
+.hidden {
+    display: none;
+}
+#abouttext {
+	text-align: left;
+	position: fixed;
+	top: 45%;
+	left: 26%;
+	color: #ffffff;
+	letter-spacing: 1px;
+	font-size: 8pt;
+	line-height: 18px;
+}
+b {
+	color: #000;
+}
+#cf2 {
+    position: relative;
+    height: 600px;
+    width: 600px;
+    margin: 0 auto;
+}
+#cf2 img {
+    position: absolute;
+    left: 0;
+    max-height: 600px;
+    max-width: 600px;
+    opacity: 0;
+    z-index: 0;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+}
+
+#cf2 img.visible {
+    opacity: 1;
+    z-index: 1;
+}
+.desc {
+	text-align: left;
+	line-height: 17px;
+	letter-spacing: 0.1px;
+	width: 190px;
+	margin-top: 100px;
+	margin-left: -34px;
+	opacity: 0;
+}
+.proj:hover +.desc {
+	opacity: 1;
+}
+.proj {
+	color: #0003FF;
+	text-align: left;
+	font-weight: bold;
+	letter-spacing: 1px;
+	font-size: 10pt;
+	line-height: 20px;
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+	width: 180px;
+	margin-top: 130px;
+}
+#contactinfo {
+	color: #FF0000;
+	position: fixed;
+	bottom: 55px;
+	right: 30px;
+	text-align: left;
+	letter-spacing: 0.5px;
+	font-size: 8pt;
+	line-height: 17px;
+	opacity: 0;
+	z-index: 99;
+}
+#contact {
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	z-index: 99;
+}
+#contact:hover +#contactinfo {
+	opacity: 1;
+}
+#websitebg {
+	background-image: url('Images/Website-BG.jpg');
+	background-repeat: no-repeat;
+	width: 600px;
+	height: 542px;
+	margin-top: -419px;
+}
+#watermeplease {
+	width: 525px;
+	height: 380px;
+	overflow: scroll;
+	margin-left: 37px;
+}
+#watermeplease img {
+	max-height: 1787px;
+}
+#watermepleasearrow {
+	position: relative;
+	top: -480px;
+	left: 525px;
+	background-image: url('Images/Arrow.png');
+	z-index: 99;
+	height: 12px;
+	width: 6px;
+	z-index: 99;
+}
+.hidden {
+    display: none;
+}
+</style>
+
+</head>
+
+<body>
+<div id="main-wrap">
+<table id="wrapper">
+      <tr>
+         <td><center>
+   <a href="#main-wrap"><img src="Images/Top-Icon-Black.png" width="23px" height="45px" class="photo"/></a>
+   <div class="title">TOP</div>
+
+   <a href="https://blissofficial.bandcamp.com"><img src="Images/Music-Icon-Black.png" width="24px" height="35px" class="photo2"/></a>
+   <div class="title2">MUSIC</div>
+    
+   <a id="displayText" href="javascript:toggle();"><img src="Images/Ectetera-Icon-Black.png" width="17px" height="40px" class="photo3"/></a>
+   <div class="title3">CONTACT</div>
+</center>
+</td></tr>
+   </table>
+
+<center>
+<div id="main">
+
+<table>
+<td>
+<div class="proj">
+CUTE DOOR<br>
+Suburban Pop / 2015
+</div>
+<div class="desc">
+Album designs & branding for suburban pop musician <a href="#">Cute Door</a>.
+</div>
+</td>
+<td valign="center">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<div id="cf2" class="shadow">
+<img class="visible" src="Images/Cute-Door-1.jpg" alt="1"/>
+<img src="Images/Cute-Door-2.jpg" alt="2"/>
+<img src="Images/Cute-Door-3.jpg" alt="3"/>
+</div>
+</td>
+</table>
+
+<table>
+<td>
+<div class="proj">
+ESSENTIAL<br>
+Event / 2015
+</div>
+<div class="desc">
+Three artists discuss how they manipulate minimalism in their specific medium.
+</div>
+</td>
+<td valign="center">
+<div id="cf2" class="shadow">
+<img class="visible" src="Images/Design/Essentiel-1.jpg" alt="1"/>
+<img src="Images/Essentiel-2.jpg" alt="2"/>
+<img src="Images/Essentiel-3.jpg" alt="3"/>
+<img src="Images/Essentiel-4.jpg" alt="4"/>
+<img src="Images/Essentiel-5.jpg" alt="5"/>
+<img src="Images/Essentiel-6.jpg" alt="6"/>
+<img src="Images/Essentiel-Website.gif" alt="7"/>
+</div>
+</td>
+</table>
+
+<table>
+<td>
+<div class="proj">
+ECOTHERAPY<br>
+How To Guide / 2015
+</div>
+<div class="desc">
+A self published guide on how plants can positively affect one's overall well-being.
+</div>
+</td>
+<td valign="center">
+<div id="cf2" class="shadow">
+<img class="visible" src="Images/Design/Ecotherapy-1.jpg" alt="1"/>
+<img src="Images/Ecotherapy-2.jpg" alt="2"/>
+<img src="Images/Ecotherapy-3.jpg" alt="3"/>
+<img src="Images/Ecotherapy-4.jpg" alt="4"/>
+</div>
+</td>
+</table>
+
+<table>
+<td>
+<div class="proj">
+WATER ME PLEASE<br>
+Website / 2015
+</div>
+<div class="desc">
+Website design for an organization that donates plants to college students dealing with anxiety and depression.
+</div>
+</td>
+<td valign="top">
+<div id="watermeplease">
+<img src="Images/Water-Me-Please.jpg" width="100%">
+</div>
+    <div id="websitebg"> </div>
+    <div id="watermepleasearrow"> </div>
+</td>
+</table>
+
+<table>
+<td>
+<div class="proj">
+ANGEL EP<br>
+Cassette / 2014
+</div>
+<div class="desc">
+Cassette design for <a href="https://blissofficial.bandcamp.com/album/angel-ep">Angel EP</a> by Bliss. Released on Friends Records.
+</div>
+</td>
+<td valign="center">
+<div id="cf2" class="shadow">
+    <img class="visible" src="Images/Angel-EP-1.jpg" alt="1"/>
+    <img src="Images/Angel-EP-2.jpg" alt="2"/>
+    <img src="Images/Angel-EP-3.jpg" alt="3"/>
+</div>
+</td>
+</table>
+
+<br><br><br><br>
+<br><br><br><br>
+</div>
+</div>
+</center>
+
+<div id="contact" style="display: none;">
+<a href="mailto:dshultz@mica.edu"><b>dshultz@mica.edu</b></a>
+</div>
+
+<div id="contactinfo">
+Available for freelance and/or collaborations.<br>
+Resume & portfolio available upon request.
+</div>
+   
+
+<script type="text/javascript">
+$(document).ready(function() {
+    $.fn.nextOrFirst = function (selector) {
+        var next = this.next(selector);
+        return (next.length) ? next : this.prevAll(selector).last();
+    };
+    $("#cf2 img").click(function() {
+        $(this)
+        .removeClass('visible')
+        .nextOrFirst()
+        .addClass('visible');
+    });
+});
+
+function toggle() {
+	var ele = document.getElementById("contact");
+	//var text = document.getElementById("displayText");
+	if(ele.style.display == "block") {
+    	ele.style.display = "none";
+		//text.innerHTML = "show";
+  	}
+	else {
+		ele.style.display = "block";
+		//text.innerHTML = "hide";
+	}
+} 
+
+jQuery(document).ready(function(){
+   
+    jQuery('a[href^="#"]').click(function(e) {
+
+        jQuery('html,body').animate({ scrollTop: jQuery(this.hash).offset().top}, 1000);
+
+        return false;
+
+        e.preventDefault();
+
+    });
+
+});
+</script>
+
+</body>
+</html>
