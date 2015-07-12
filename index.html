@@ -148,11 +148,12 @@ b {
     width: 600px;
     margin: 0 auto;
 }
-#cf2 img {
+#cf2 div.holder {
+	text-align: left;
     position: absolute;
     left: 0;
-    max-height: 600px;
-    max-width: 600px;
+    height: 600px;
+    width: 600px;
     opacity: 0;
     z-index: 0;
     -webkit-transition: opacity 1s ease-in-out;
@@ -161,7 +162,12 @@ b {
     transition: opacity 1s ease-in-out;
 }
 
-#cf2 img.visible {
+#cf2 div.holder img {
+    max-height: 600px;
+    max-width: 600px;
+}
+
+#cf2 div.holder.visible {
     opacity: 1;
     z-index: 1;
 }
@@ -254,7 +260,7 @@ b {
    <a href="#main-wrap"><img src="Images/Top-Icon-Black.png" width="23px" height="45px" class="photo"/></a>
    <div class="title">TOP</div>
 
-   <a href="https://blissofficial.bandcamp.com"><img src="Images/Music-Icon-Black.png" width="24px" height="35px" class="photo2"/></a>
+   <a href="http://soundcloud.com/cutedoor"><img src="Images/Music-Icon-Black.png" width="24px" height="35px" class="photo2"/></a>
    <div class="title2">MUSIC</div>
     
    <a id="displayText" href="javascript:toggle();"><img src="Images/Ectetera-Icon-Black.png" width="17px" height="40px" class="photo3"/></a>
@@ -265,7 +271,8 @@ b {
 
 <center>
 <div id="main">
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<table>
 <table>
 <td>
 <div class="proj">
@@ -277,11 +284,11 @@ Album designs & branding for suburban pop musician <a href="#">Cute Door</a>.
 </div>
 </td>
 <td valign="center">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <div id="cf2" class="shadow">
-<img class="visible" src="Images/Cute-Door-1.jpg" alt="1"/>
-<img src="Images/Cute-Door-2.jpg" alt="2"/>
-<img src="Images/Cute-Door-3.jpg" alt="3"/>
+<div class="holder visible">
+<img src="Images/Cute-Door-1.jpg" alt="1"/></div>
+<div class="holder"><img src="Images/Cute-Door-2.jpg" alt="2"/></div>
+<div class="holder"><img src="Images/Cute-Door-3.jpg" alt="3"/></div>
 </div>
 </td>
 </table>
@@ -289,7 +296,7 @@ Album designs & branding for suburban pop musician <a href="#">Cute Door</a>.
 <table>
 <td>
 <div class="proj">
-ESSENTIAL<br>
+ESSENTIEL<br>
 Event / 2015
 </div>
 <div class="desc">
@@ -298,13 +305,14 @@ Three artists discuss how they manipulate minimalism in their specific medium.
 </td>
 <td valign="center">
 <div id="cf2" class="shadow">
-<img class="visible" src="Images/Essentiel-1.jpg" alt="1"/>
-<img src="Images/Essentiel-2.jpg" alt="2"/>
-<img src="Images/Essentiel-3.jpg" alt="3"/>
-<img src="Images/Essentiel-4.jpg" alt="4"/>
-<img src="Images/Essentiel-5.jpg" alt="5"/>
-<img src="Images/Essentiel-6.jpg" alt="6"/>
-<img src="Images/Essentiel-Website.gif" alt="7"/>
+<div class="holder visible">
+<img src="Images/Essentiel-1.jpg" alt="1"/></div>
+<div class="holder"><img src="Images/Essentiel-2.jpg" alt="2"/></div>
+<div class="holder"><img src="Images/Essentiel-3.jpg" alt="3"/></div>
+<div class="holder"><img src="Images/Essentiel-4.jpg" alt="4"/></div>
+<div class="holder"><img src="Images/Essentiel-5.jpg" alt="5"/></div>
+<div class="holder"><img src="Images/Essentiel-6.jpg" alt="6"/></div>
+<div class="holder"><img src="Images/Essentiel-Website.gif" alt="7"/></div>
 </div>
 </td>
 </table>
@@ -321,10 +329,10 @@ A self published guide on how plants can positively affect one's overall well-be
 </td>
 <td valign="center">
 <div id="cf2" class="shadow">
-<img class="visible" src="Images/Ecotherapy-1.jpg" alt="1"/>
-<img src="Images/Ecotherapy-2.jpg" alt="2"/>
-<img src="Images/Ecotherapy-3.jpg" alt="3"/>
-<img src="Images/Ecotherapy-4.jpg" alt="4"/>
+<div class="holder visible">
+<img src="Images/Ecotherapy-1.jpg" alt="1"/></div>
+<div class="holder"><img src="Images/Ecotherapy-2.jpg" alt="2"/></div>
+<div class="holder"><img src="Images/Ecotherapy-3.jpg" alt="3"/></div>
 </div>
 </td>
 </table>
@@ -360,9 +368,10 @@ Cassette design for <a href="https://blissofficial.bandcamp.com/album/angel-ep">
 </td>
 <td valign="center">
 <div id="cf2" class="shadow">
-    <img class="visible" src="Images/Angel-EP-1.jpg" alt="1"/>
-    <img src="Images/Angel-EP-2.jpg" alt="2"/>
-    <img src="Images/Angel-EP-3.jpg" alt="3"/>
+<div class="holder visible">
+<img src="Images/Angel-EP-1.jpg" alt="1"/></div>
+<div class="holder"><img src="Images/Angel-EP-2.jpg" alt="2"/></div>
+<div class="holder"><img src="Images/Angel-EP-3.jpg" alt="3"/></div>
 </div>
 </td>
 </table>
@@ -389,7 +398,7 @@ $(document).ready(function() {
         var next = this.next(selector);
         return (next.length) ? next : this.prevAll(selector).last();
     };
-    $("#cf2 img").click(function() {
+    $("#cf2 div.holder").click(function() {
         $(this)
         .removeClass('visible')
         .nextOrFirst()
