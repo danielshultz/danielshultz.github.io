@@ -16,14 +16,6 @@ body {
 	bottom: 0px;
 	left: 0px;
 }
-@font-face {
-  font-family: 'Regular';
-  src: url('Fonts/regular.otf');
-}
-@font-face {
-  font-family: 'Bold';
-  src: url('Fonts/bold.otf');
-}
 .about {
 	position: absolute;
 	bottom: 37px;
@@ -31,8 +23,8 @@ body {
 	width: 250px;
 	line-height: 19px;
 	letter-spacing: .5px;
-	font-family: Regular;
-	font-size: 10pt;
+	font-family: verdana;
+	font-size: 8pt;
 	color: #918E5B;
 }
 .nav {
@@ -42,15 +34,14 @@ body {
 	width: 250px;
 	line-height: 19px;
 	letter-spacing: .5px;
-	font-family: Bold;
-	font-size: 10pt;
 	color: #918E5B;
 }
 a:link, a:visited, a:hover {
-	font-family: Bold;
-	font-size: 10pt;
+	font-family: verdana;
+	font-size: 8pt;
 	color: #674e2b;
 	text-decoration: none;
+	font-weight: bold;
 }
 a.portfolio:hover:after {
 	content: url(Images/1.gif);
@@ -72,12 +63,6 @@ a.contact:hover:after {
     position: absolute;
     left: 177px;
     top: -5px;
-}
-.bold {
-	font-family: Bold;
-	font-size: 10pt;
-	color: #918E5B;
-	display: inline;
 }
 .slash {
 	font-size: 8pt;
