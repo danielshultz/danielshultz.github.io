@@ -29,7 +29,7 @@ body {
 	color: #918E5B;
 }
 .nav {
-	position: fixed;
+	position: absolute;
 	bottom: 37px;
 	left: 200px;
 	width: 250px;
