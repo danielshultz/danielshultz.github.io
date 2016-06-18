@@ -23,7 +23,8 @@ body {
 	width: 250px;
 	line-height: 19px;
 	letter-spacing: .5px;
-	font-family: verdana;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 400;
 	font-size: 8pt;
 	color: #918E5B;
 }
@@ -37,11 +38,11 @@ body {
 	color: #918E5B;
 }
 a:link, a:visited, a:hover {
-	font-family: verdana;
 	font-size: 8pt;
 	color: #674e2b;
 	text-decoration: none;
-	font-weight: bold;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 700;
 }
 a.portfolio:hover:after {
 	content: url(Images/1.gif);
@@ -64,7 +65,7 @@ a.contact:hover:after {
     left: 177px;
     top: -5px;
 }
-.slash {
-	font-size: 8pt;
-	display: inline;
+b {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 700;
 }
