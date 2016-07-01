@@ -26,7 +26,7 @@ body {
 	font-family: 'Arimo', sans-serif;
 	font-weight: 400;
 	font-size: 8pt;
-	color: #918E5B;
+	color: #808080;
 }
 .nav {
 	position: absolute;
@@ -35,7 +35,7 @@ body {
 	width: 250px;
 	line-height: 19px;
 	letter-spacing: .5px;
-	color: #918E5B;
+	color: #808080;
 }
 a:link, a:visited, a:hover {
 	font-size: 8pt;
