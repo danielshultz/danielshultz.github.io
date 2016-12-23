@@ -26,37 +26,90 @@
 <div id="spacer"> </div>
 <a href="Resume.pdf">Resume</a>
 </div>
-<a href="mailto:dshultz@mica.edu"><img src="Images/Bone.gif" class="bone" ondragstart="return false;"></a>
-   <div class="bonetext">Click the bone to contact me!</div>
+<a id="displayText" href="javascript:toggle();"><img src="Images/Bone.gif" class="bone" ondragstart="return false;"></a>
+   <div class="bonetext">Click the bone to learn about me!</div>
 </div>
 <img src="Images/Cute-Door-1.jpg" ondragstart="return false;">
 	<br>
 	<div id="caption">
-	<b>Sidewalk (Single)</b><br>
+		<b>Sidewalk (Single)</b><br>
 	Digital illustration, square format
 	</div>
 <div id="break"> </div>
 <img src="Images/Cute-Door-2.jpg" ondragstart="return false;">
 <br>
 	<div id="caption">
-	<b>Bank Boy (Single)</b><br>
+		<b>Bank Boy (Single)</b><br>
 	Digital illustration, square format
 	</div>
 <div id="break"> </div>
 <img src="Images/Cute-Door-3.jpg" ondragstart="return false;">
 <br>
 	<div id="caption">
-	<b>Parking Lot (Single)</b><br>
+		<b>Parking Lot (Single)</b><br>
 	Digital illustration, square format
 	</div>
 <div id="break"> </div>
 <img src="Images/Cute-Door-4.jpg" ondragstart="return false;">
 <br>
 	<div id="caption">
-	<b>Moody Moody (Unreleased Original Version)</b><br>
+		<b>Moody Moody (Single) <i>(Unreleased Original Version)</i></b><br>
 	Digital illustration, square format
 	</div>
 </div>
+
+<div id="about" style="display: none;">
+<img src="Images/About Pic.jpg" class="aboutpic" ondragstart="return false;">
+	<div id="abouttext">
+		Hi! My name is <div style="color: #fedd32; display: inline;">Daniel</div>. I'm an artist/designer<br>
+	who loves freshly mowed lawns and puppy kisses.<br><br>
+		Please feel free to contact me via <a href="mailto:dshultz@mica.edu">email</a>.
+	</div>
+</div>
+   
+
+<script type="text/javascript">
+$(document).ready(function() {
+    $.fn.nextOrFirst = function (selector) {
+        var next = this.next(selector);
+        return (next.length) ? next : this.prevAll(selector).last();
+    };
+    $("#cf2 div.holder").click(function() {
+        $(this)
+        .removeClass('visible')
+        .nextOrFirst()
+        .addClass('visible');
+    });
+});
+
+function toggle() {
+	var ele = document.getElementById("about");
+	//var text = document.getElementById("displayText");
+	if(ele.style.display == "block") {
+    	ele.style.display = "none";
+		//text.innerHTML = "show";
+  	}
+	else {
+		ele.style.display = "block";
+		//text.innerHTML = "hide";
+	}
+} 
+
+jQuery(document).ready(function(){
+   
+    jQuery('a[href^="#"]').click(function(e) {
+
+        jQuery('html,body').animate({ scrollTop: jQuery(this.hash).offset().top}, 1000);
+
+        return false;
+
+        e.preventDefault();
+
+    });
+
+});
+</script>
+
 
 </body>
 </html>

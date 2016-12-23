@@ -18,6 +18,15 @@
        url('Fonts/GreycliffCF-Bold.ttf')  format('truetype'),
        url('Fonts/GreycliffCF-Bold.svg#svgFontName') format('svg');
 }
+@font-face {
+  font-family: 'GreycliffBoldItalic';
+	src: url('Fonts/GreycliffCF-BoldItalic.eot');
+  src: url('Fonts/GreycliffCF-BoldItalic.eot?#iefix') format('embedded-opentype'),
+       url('Fonts/GreycliffCF-BoldItalic.woff2') format('woff2'),
+       url('Fonts/GreycliffCF-BoldItalic.woff') format('woff'),
+       url('Fonts/GreycliffCF-BoldItalic.ttf')  format('truetype'),
+       url('Fonts/GreycliffCF-BoldItalic.svg#svgFontName') format('svg');
+}
 body {
 	font-family: GreycliffReg;
 }
@@ -55,6 +64,12 @@ img {
 	line-height: 12pt;
 	padding-top: 5px;
 	margin-bottom: -4px;
+}
+.i {
+	font-family: GregcliffBoldItalic;
+	font-style: none;
+	text-decoration: none;
+	display: inline;
 }
 a:link, a:visited, a:hover {
 	font-family: GreycliffBold;
