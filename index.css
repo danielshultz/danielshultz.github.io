@@ -48,6 +48,14 @@ img {
 	display: inline;
 	float: left;
 }
+#caption {
+	font-family: GreycliffReg;
+	font-size: 8pt;
+	letter-spacing: .5px;
+	line-height: 12pt;
+	padding-top: 5px;
+	margin-bottom: -4px;
+}
 a:link, a:visited, a:hover {
 	font-family: GreycliffBold;
 	font-size: 8pt;
