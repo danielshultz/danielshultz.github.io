@@ -181,7 +181,7 @@ a:hover +.bonetext {
 	}
 }
 @media only screen and (max-width: 560px) {
-	#abouttext {
+	#abouttext, #abouttext a:link, #abouttext a:visited, #abouttext a:hover {
 		font-size: 10pt;
 		line-height: 16pt;
 	}
