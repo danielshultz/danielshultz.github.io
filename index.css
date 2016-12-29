@@ -183,7 +183,7 @@ a:hover +.bonetext {
 	#about {
 		margin-top: -13px;
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 400px) {
 			a:hover +.bonetext {
     opacity: 0;
 }
