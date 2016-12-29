@@ -29,11 +29,12 @@
 }
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 	a:link, a:visited, a:hover {
-		font-size: 15pt;
+		font-size: 18pt;
 	}
 }
 body {
 	font-family: GreycliffReg;
+	-webkit-text-size-adjust: none;
 }
 img {
 	max-width: 100%;
@@ -64,7 +65,7 @@ img {
 }
 #caption {
 	font-family: GreycliffReg;
-	font-size: 8pt !important;
+	font-size: 70%;
 	letter-spacing: .5px;
 	line-height: 12pt;
 	padding-top: 5px;
@@ -78,7 +79,7 @@ img {
 }
 a:link, a:visited, a:hover {
 	font-family: GreycliffBold;
-	font-size: 8pt;
+	font-size: 70%;
 	color: #000;
 	text-decoration: none;
 	-o-transition: color .5s ease-out, background 5s ease-in;
