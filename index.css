@@ -172,4 +172,8 @@ a:hover +.bonetext {
 	a:hover +.bonetext {
     opacity: 0;
 }
+	.aboutpic {
+		padding-left: 46px;
+		padding-top: 8px;
+	}
 }
