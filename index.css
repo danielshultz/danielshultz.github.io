@@ -182,20 +182,10 @@ a:hover +.bonetext {
 }
 	#about {
 		margin-top: -13px;
-}
-@media only screen and (max-width: 400px) {
-			a:hover +.bonetext {
-    opacity: 0;
-}
-	.aboutpic {
-		padding-left: 40px;
-		padding-top: 10px;
-}
-	#abouttext {
-		padding-left: 185px;
-		padding-top: -15px;
 	}
 }
-	#about {
-		margin-top: -13px;
+@media only screen and (max-width: 400px) {
+	#abouttext {
+		text-size: 12pt;
+	}
 }
