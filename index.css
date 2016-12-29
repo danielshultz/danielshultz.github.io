@@ -29,7 +29,7 @@
 }
 body {
 	font-family: GreycliffReg;
-	-webkit-text-size-adjust: 100%;
+	-webkit-text-size-adjust: none;
 }
 img {
 	max-width: 100%;
