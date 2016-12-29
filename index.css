@@ -175,5 +175,9 @@ a:hover +.bonetext {
 	.aboutpic {
 		padding-left: 46px;
 		padding-top: 8px;
+}
+	#abouttext {
+		padding-left: 60px;
+		padding-top: 46px;
 	}
 }
