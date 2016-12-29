@@ -27,6 +27,30 @@
        url('Fonts/GreycliffCF-BoldItalic.ttf')  format('truetype'),
        url('Fonts/GreycliffCF-BoldItalic.svg#svgFontName') format('svg');
 }
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+	a:link, a:visited, a:hover {
+		color: #000;
+	}
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px) {
+	a:link, a:visited, a:hover {
+		color: #000;
+	}
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px) {
+	a:link, a:visited, a:hover {
+		color: #000;
+	}
+}
 body {
 	font-family: GreycliffReg;
 	-webkit-text-size-adjust: none;
