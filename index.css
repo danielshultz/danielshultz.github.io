@@ -49,6 +49,7 @@ img {
 	top: 0px;
 	left: 0px;
 	z-index: 100;
+	‑webkit‑text‑size‑adjust: 100%;
 }
 #headertext {
 	font-family: GreycliffBold;
@@ -57,6 +58,7 @@ img {
 	padding-left: 46px;
 	display: inline;
 	float: left;
+	‑webkit‑text‑size‑adjust: 100%;
 }
 #caption {
 	font-family: GreycliffReg;
