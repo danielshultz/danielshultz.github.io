@@ -179,13 +179,12 @@ a:hover +.bonetext {
 	#abouttext {
 		padding-left: 185px;
 	}
-}
 	#about {
 		margin-top: -13px;
-	}
 }
-@media only screen and (max-width: 400px) {
+}
+@media only screen and (max-width: 350px) {
 	#abouttext {
-		text-size: 12pt;
+		text-size: 11pt !important;
 	}
 }
