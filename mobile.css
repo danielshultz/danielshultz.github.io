@@ -27,6 +27,9 @@
        url('Fonts/GreycliffCF-BoldItalic.ttf')  format('truetype'),
        url('Fonts/GreycliffCF-BoldItalic.svg#svgFontName') format('svg');
 }
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+/* Styles */
+}
 body {
 	font-family: GreycliffReg;
 }
