@@ -167,35 +167,8 @@ a:hover +.bonetext {
     height: 100%;
 	z-index: -1;
 }
-/* Smartphones (portrait and landscape) ----------- */
-@media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 480px) {
-	a:link, a:visited, a:hover {
-		color: #000;
-	}
-	a:hover +.bonetext {
-    opacity: 0;
-}
-}
 
-/* Smartphones (landscape) ----------- */
-@media only screen 
-and (min-width : 321px) {
-	a:link, a:visited, a:hover {
-		color: #000;
-	}
-	a:hover +.bonetext {
-    opacity: 0;
-}
-}
-
-/* Smartphones (portrait) ----------- */
-@media only screen 
-and (max-width : 320px) {
-	a:link, a:visited, a:hover {
-		color: #000;
-	}
+@media only screen and (max-width: 800px) {
 	a:hover +.bonetext {
     opacity: 0;
 }
