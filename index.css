@@ -65,7 +65,7 @@ img {
 }
 #caption {
 	font-family: GreycliffReg;
-	font-size: 70%;
+	font-size: 8pt;
 	letter-spacing: .5px;
 	line-height: 12pt;
 	padding-top: 5px;
@@ -79,7 +79,7 @@ img {
 }
 a:link, a:visited, a:hover {
 	font-family: GreycliffBold;
-	font-size: 70%;
+	font-size: 8pt;
 	color: #000;
 	text-decoration: none;
 	-o-transition: color .5s ease-out, background 5s ease-in;
