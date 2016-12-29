@@ -183,14 +183,13 @@ a:hover +.bonetext {
 	#about {
 		margin-top: -13px;
 }
-}
 @media only screen and (max-width: 320px) {
 			a:hover +.bonetext {
     opacity: 0;
 }
 	.aboutpic {
 		padding-left: 40px;
-		padding-top: 8px;
+		padding-top: 10px;
 }
 	#abouttext {
 		padding-left: 185px;
@@ -199,5 +198,4 @@ a:hover +.bonetext {
 }
 	#about {
 		margin-top: -13px;
-}
 }
