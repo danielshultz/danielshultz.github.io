@@ -161,6 +161,9 @@ a:hover +.bonetext {
 	z-index: 99;
 	background-color: #fff;
 }
+#dogtag img {
+	max-width: 300px;
+}
 #dogtagtext {
 	padding-left: 50px;
 	padding-top: 125px;
