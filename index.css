@@ -34,17 +34,18 @@ body {
 img {
 	max-width: 100%;
 	height: auto;
+	width: auto\9;
 }
 #main {
-	padding: 40px;
-	padding-top: 41px;
-	margin-bottom: -2px;
+	padding: 150px;
+	padding-top: 47px;
+	padding-bottom: 60px;
 }
 #header {
 	background-color: white;
 	display: inline;
 	width: 100%;
-	height: 49px;
+	height: 55px;
 	position: fixed;
 	top: 0px;
 	left: 0px;
@@ -53,10 +54,10 @@ img {
 #headertext {
 	font-family: GreycliffBold;
 	letter-spacing: 1px;
-	margin-top: 13px;
-	padding-left: 46px;
-	display: inline;
+	margin-top: 15px;
+	padding-left: 157px;
 	float: left;
+	width: 800px;
 }
 #caption {
 	font-family: GreycliffReg;
@@ -84,14 +85,14 @@ a:link, a:visited, a:hover {
  	transition: color .5s ease-out, background 5s ease-in;
 }
 a:hover {
-	color: #fedd32;
+	color: #efc02f;
 }
 #spacer {
-	padding-right: 90px;
+	padding-right: 30px;
 	display: inline;
 }
 #break {
-	padding-bottom: 46px;
+	padding-bottom: 60px;
 	display: block;
 }
 .bonetext { 
@@ -109,8 +110,8 @@ a:hover +.bonetext {
 }
 .bone {
 	position: fixed;
-	top: 6px;
-    right: 45px;
+	top: 8px;
+    right: 155px;
 	width: 45px;
 	height: 35px;
 }
@@ -152,6 +153,51 @@ a:hover +.bonetext {
 	padding-left: 20%;
 	padding-top: 8px;
 }
+#info {
+	width: auto;
+	text-align: left;
+}
+#dogtag {
+	z-index: 99;
+	background-color: #fff;
+}
+#dogtagtext {
+	padding-left: 50px;
+	padding-top: 125px;
+	color: #757575;
+	font-family: GreycliffReg;
+	font-size: 13pt;
+	letter-spacing: .5px;
+	line-height: 18pt;
+	z-index: 1;
+	width: 500px;
+}
+.title {
+	color: #595959;
+	font-family: GreycliffBold;
+	font-size: 25pt;
+	letter-spacing: .5px;
+	line-height: 28pt;
+}
+#dogtagtext a:link, #dogtagtext a:visited {
+	color: #595959;
+	font-family: GreycliffBold;
+	font-size: 13pt;
+	letter-spacing: .5px;
+	line-height: 18pt;
+	text-decoration: none;
+	-o-transition: color .5s ease-out, background 5s ease-in;
+ 	-ms-transition: color .5s ease-out, background 5s ease-in;
+	-moz-transition: color .5s ease-out, background 5s ease-in;
+ 	-webkit-transition: color .5s ease-out, background 5s ease-in;
+ 	transition: color .5s ease-out, background 5s ease-in;
+}
+#dogtagtext a:hover {
+	color: #efc02f;
+}
+.dogtagpic {
+	padding-top: 180px;
+}
 .videocontainer {
     position: relative;
     width: 100%;
@@ -167,8 +213,59 @@ a:hover +.bonetext {
     height: 100%;
 	z-index: -1;
 }
-
-@media only screen and (max-width: 785px) {
+#dogtag {
+	float: left;
+}
+.icon1 {
+	margin-top: -145px;
+	margin-left: 140px;
+	z-index: 0;
+	background-image: url('Images/Icon-1.png');
+	height: 29px;
+	width: 42px;
+}
+.nav:hover > .icon1{
+    visibility:hidden;
+}
+.nav {
+	
+}
+#icon2 {
+	margin-top: -7px;
+	margin-left: 348px;
+	z-index: 0;
+	background-image: url('Images/Icon-2.png');
+	height: 35px;
+	width: 37px;
+}
+#icon3 {
+	margin-top: -60px;
+	margin-left: 398px;
+	z-index: 0;
+	background-image: url('Images/Icon-3.png');
+	height: 35px;
+	width: 42px;
+}
+#icon4 {
+	margin-top: 83px;
+	margin-left: 123px;
+	z-index: 0;
+	background-image: url('Images/Icon-4.png');
+	height: 34px;
+	width: 43px;
+}
+#icon5 {
+	margin-top: -30px;
+	margin-left: 243px;
+	z-index: 0;
+	background-image: url('Images/Icon-5.png');
+	height: 29px;
+	width: 43px;
+}
+@media only screen and (max-width: 805px) {
+	#main {
+		padding: 50px;
+	}
 	a:hover +.bonetext {
     opacity: 0;
 }
@@ -178,6 +275,21 @@ a:hover +.bonetext {
 }
 	#abouttext {
 		padding-left: 185px;
+	}
+	#headertext {
+	width: 500px;
+	display: block;
+	padding-left: 57px;
+}
+	.bone {
+		margin-right: -99px;
+	}
+	#spacer {
+		padding-right: 30px;
+	}
+	#abouttext, #abouttext a:link, #abouttext a:visited, #abouttext a:hover {
+		font-size: 10pt;
+		line-height: 16pt;
 	}
 }
 @media only screen and (max-width: 560px) {

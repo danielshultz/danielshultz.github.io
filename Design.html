@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Dani Shultz</title>
+<meta charset="UTF-8">
+    <meta name="description" content="Graphic designer who loves freshly mowed lawns and puppy kisses.">
+    <meta name="keywords" content="dani, shultz, mica, graphic, design, 3D, suburbs, suburbia, art, music">
+<link rel="stylesheet" type="text/css" href="index.css">
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:700" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=.5, maximum-scale: 1.0">
+</head>
+
+<link rel="shortcut icon" href="Images/favicon.ico" />
+<link rel="icon" href="Images/favicon.ico" />
+
+<body>
+
+<div id="main">
+<div id="header">
+<div id="headertext">
+<a href="index.html">Home</a>
+<div id="spacer"> </div>
+<a href="Design.html">Design</a>
+<div id="spacer"> </div>
+<a href="Video.html">Video</a>
+<div id="spacer"> </div>
+<a href="Music.html">Music</a>
+<div id="spacer"> </div>
+<a href="Resume.pdf" target="_blank">Resume</a>
+</div>
+<a href="javascript:toggle();"><img src="Images/Bone.gif" class="bone" ondragstart="return false;"></a>
+</div>
+<a href="Ecotherapy.html"><img src="Images/Ecotherapy-1.jpg" ondragstart="return false;"></a>
+	<br>
+	<div id="caption">
+		<b>Ecotherapy (A How To Guide)</b><br>
+	A satirical self help guide on how plants are able to improve one's health.
+	</div>
+<div id="break"> </div>
+<a href="Geneva Rebranding.html"><img src="Images/Geneva-Rebranding-1.jpg" ondragstart="return false;"></a>
+	<br>
+	<div id="caption">
+		<b>Geneva, NY Rebranding</b><br>
+	Rebranding for town located on Seneca Lake and home to a number of vineyards and wineries.
+	</div>
+<div id="break"> </div>
+<a href="Shhh.html"><img src="Images/Shhh.jpg" ondragstart="return false;"></a>
+	<br>
+	<div id="caption">
+		<b>(shhh)</b><br>
+	Branding for event about the relationship between subtitles and typography.
+	</div>
+	<div id="break"> </div>
+	<a href="GFA Catalog.html"><img src="Images/GFA-Catalog-1.jpg" ondragstart="return false;"></a>
+	<br>
+	<div id="caption">
+		<b>2016 MICA GFA Senior Thesis Catalog</b><br>
+	A catalog showcasing the thesis work of every General Fine Arts major in the class of 2016 at the Maryland Institute College of Art.
+	</div>
+<div id="break"> </div>
+<a href="https://vimeo.com/149503977" target="_blank"><img src="Images/uDog.jpg" ondragstart="return false;"></a>
+	<br>
+	<div id="caption">
+		<b>uDog</b><br>
+	iPhone app that allows the user full customization of digitally rendered dog collars.
+	</div>
+<div id="break"> </div>
+<a href="Sunday Morning.html"><img src="Images/Sunday-1.jpg" ondragstart="return false;"></a>
+	<br>
+	<div id="caption">
+		<b>Sunday Morning <i>(Series)</i></b><br>
+	Archival ink on aluminum, varying sizes
+	</div>
+<div id="break"> </div>
+<a href="Cute Door.html"><img src="Images/Cute-Door-1.jpg" ondragstart="return false;"></a>
+	<br>
+	<div id="caption">
+		<b>Cute Door Singles <i>(Series)</i></b><br>
+	Digital illustrations, square format
+	</div>
+</div>
+
+<div id="about" style="display: none;">
+<img src="Images/About Pic.jpg" class="aboutpic" ondragstart="return false;">
+	<div id="abouttext">
+		Hi! My name is <a href="https://www.instagram.com/officialbackyard/" target="_blank">Dani</a>. I'm an artist/designer<br>
+	who loves freshly mowed lawns and puppy kisses.<br><br>
+		Please feel free to contact me via <a href="mailto:danishultzstudio@gmail.com">email</a>.
+	</div>
+</div>
+   
+
+<script type="text/javascript">
+$(document).ready(function() {
+    $.fn.nextOrFirst = function (selector) {
+        var next = this.next(selector);
+        return (next.length) ? next : this.prevAll(selector).last();
+    };
+    $("#cf2 div.holder").click(function() {
+        $(this)
+        .removeClass('visible')
+        .nextOrFirst()
+        .addClass('visible');
+    });
+});
+
+function toggle() {
+	var ele = document.getElementById("about");
+	//var text = document.getElementById("displayText");
+	if(ele.style.display == "block") {
+    	ele.style.display = "none";
+		//text.innerHTML = "show";
+  	}
+	else {
+		ele.style.display = "block";
+		//text.innerHTML = "hide";
+	}
+} 
+
+jQuery(document).ready(function(){
+   
+    jQuery('a[href^="#"]').click(function(e) {
+
+        jQuery('html,body').animate({ scrollTop: jQuery(this.hash).offset().top}, 1000);
+
+        return false;
+
+        e.preventDefault();
+
+    });
+
+});
+</script>
+
+
+</body>
+</html>
+
+<script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
