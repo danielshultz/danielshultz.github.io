@@ -73,6 +73,11 @@ img {
 	text-decoration: none;
 	display: inline;
 }
+b {font-family: GreycliffBold;
+	font-style: none;
+	text-decoration: none;
+	display: inline;
+}
 a:link, a:visited, a:hover {
 	font-family: GreycliffBold;
 	font-size: 8pt;
