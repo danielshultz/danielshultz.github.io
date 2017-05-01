@@ -223,7 +223,7 @@ a:hover +.bonetext {
 }
 .icon1 {
 	margin-top: -145px;
-	margin-left: 140px;
+	margin-left: 144px;
 	z-index: 0;
 	background-image: url('Images/Icon-1.png');
 	height: 29px;
@@ -237,7 +237,7 @@ a:hover +.bonetext {
 }
 #icon2 {
 	margin-top: -7px;
-	margin-left: 348px;
+	margin-left: 354px;
 	z-index: 0;
 	background-image: url('Images/Icon-2.png');
 	height: 35px;
@@ -245,7 +245,7 @@ a:hover +.bonetext {
 }
 #icon3 {
 	margin-top: -60px;
-	margin-left: 398px;
+	margin-left: 405px;
 	z-index: 0;
 	background-image: url('Images/Icon-3.png');
 	height: 35px;
@@ -261,7 +261,7 @@ a:hover +.bonetext {
 }
 #icon5 {
 	margin-top: -30px;
-	margin-left: 243px;
+	margin-left: 246px;
 	z-index: 0;
 	background-image: url('Images/Icon-5.png');
 	height: 29px;
