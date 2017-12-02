@@ -28,8 +28,9 @@
 <a href="Music.html">Music</a>
 <div id="spacer"> </div>
 <a href="Resume.pdf" target="_blank">Resume</a>
+	<div id="spacer"> </div>
+	<a href="javascript:toggle();"><img src="Images/Bone.gif" class="bone" ondragstart="return false;"></a>
 </div>
-<a href="javascript:toggle();"><img src="Images/Bone.gif" class="bone" ondragstart="return false;"></a>
 	</div>
 		<a href="Here and On.html"><img src="Images/HO-1.jpg" ondragstart="return false;"></a>
 	<br>
@@ -45,7 +46,7 @@
 	Branding for event about the relationship between subtitles and typography.
 	</div>
 	<div id="break"> </div>
-	<a href="https://vimeo.com/149503977" target="_blank"><img src="Images/uDog.jpg" ondragstart="return false;"></a>
+	<a href="https://vimeo.com/245472134" target="_blank"><img src="Images/uDog.jpg" ondragstart="return false;"></a>
 	<br>
 	<div id="caption">
 		<b>uDog</b><br>
@@ -137,12 +138,12 @@ $(document).ready(function() {
 function toggle() {
 	var ele = document.getElementById("about");
 	//var text = document.getElementById("displayText");
-	if(ele.style.display == "block") {
+	if(ele.style.display == "inline-block") {
     	ele.style.display = "none";
 		//text.innerHTML = "show";
   	}
 	else {
-		ele.style.display = "block";
+		ele.style.display = "inline-block";
 		//text.innerHTML = "hide";
 	}
 } 
